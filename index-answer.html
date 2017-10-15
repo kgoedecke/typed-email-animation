@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Typed Email Animation
+	</title>
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="style.min.css">
+
+	<!-- Goolge Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- Scripts -->
+	<script src="node_modules/typed.js/lib/typed.min.js"></script> 
+
+
+</head>
+
+<body>
+
+
+<a id="replay" href="#">Start</a>
+
+<div id="main-window" class="email-window">
+	<div class="frame">
+		<div class="controls">
+			<div class="window-elements">
+				<div class="window-button">
+				</div>
+				<div class="window-button">
+				</div>
+				<div class="window-button">
+				</div>
+			</div>
+			<div class="email-controls">
+				<span class="send button"><img src="assets/img/send-icon-.png"></span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="email-fields">
+				<div class="to-field"><span class="details-label">To:</span> hi@email.com</div>
+				<div class="cc-field"><span class="details-label">Cc:</span></div>
+				<div class="subject-field"><span class="details-label">Subject:</span>Hi John</div>
+				<div class="from-field"><span class="details-label">From:</span> you@awesome-company.com</div>
+			</div>
+			<div class="email-content">
+				<div id="typed-strings">
+				    <p>Hi there,<br><br>
+				    	this is a super smooth animation of an email.
+				    	<br><br>
+				    </p>
+				</div>
+				<span id="typed"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br>
+
+<div id="main-window-answer" class="email-window fade-out">
+	<div class="frame">
+		<div class="controls">
+			<div class="window-elements">
+				<div class="window-button">
+				</div>
+				<div class="window-button">
+				</div>
+				<div class="window-button">
+				</div>
+			</div>
+			<div class="email-controls">
+				<span class="send button"><img src="assets/img/delete-icon.png"></span>
+			</div>
+		</div>
+		<div class="content answer">
+			<div class="email-fields">
+				<div class="from-field">Invy Bot</div>
+				<div class="subject-field">RE: Invoice for John</div>
+				<div class="to-field">To: <span class="details-label">kevin@getlookaround.com</span></div>
+			</div>
+			<div class="email-content">
+			    <p>Hi Kevin<br><br>
+			    	Please find attached the invoice that you wanted me to create for John.
+			    	<br><br>
+			    	Invy
+			    	<br>
+			    	---
+			    	<br>
+			    	AI powered invoice bot<br>
+			    	www.invybot.com
+			    	<br><br>
+			    	<div class="pdf-file">
+			    		<img width="35" src="assets/img/pdf-icon.png">
+			    		<div id="preview" class="preview fade-out">
+							<img src="assets/img/preview.jpg">
+			    			<div class="arrow">
+			    			</div>
+			    		</div>
+			    	</div>
+			    </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+</html>
+
+<script src="assets/js/custom.min.js"></script> 

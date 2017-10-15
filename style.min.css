@@ -1,0 +1,28 @@
+.typed-cursor{opacity:1;-webkit-animation:typedjsBlink .7s infinite;animation:typedjsBlink .7s infinite;-webkit-animation-name:typedjsBlink;animation-name:typedjsBlink;-webkit-animation-duration:.7s;animation-duration:.7s;-webkit-animation-timing-function:initial;animation-timing-function:initial;-webkit-animation-delay:initial;animation-delay:initial;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:initial;animation-direction:initial;-webkit-animation-fill-mode:initial;animation-fill-mode:initial;-webkit-animation-play-state:initial;animation-play-state:initial}
+.email-window.fade-out-slide-out{right:-1000px;position:absolute;opacity:0;visibility:hidden}
+.fade-out{opacity:0 !important}
+.email-window{font-family:'Open Sans',sans-serif;font-size:12px;text-align:left;opacity:1;right:0;-webkit-transition:visibility 0s,opacity .5s linear;transition:visibility 0s,opacity .5s linear;width:80%;margin:0 auto;border-radius:2px;background-color:#5093fc;box-shadow:0 20px 50px rgba(0,0,0,0.3)}
+.email-window .frame{padding:15px 20px}
+.email-window .controls{height:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.email-window .controls .window-elements{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.email-window .controls .window-elements .window-button{width:15px;height:15px;background:#daeafb;border-radius:7px;margin-right:10px;box-shadow:0 0 5px rgba(0,0,0,0.1)}
+.email-window .controls .email-controls{-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;text-align:right}
+.email-window .controls .email-controls .button{border-radius:4px;background-color:#fff;padding:3px 17px;box-shadow:0 0 5px rgba(0,0,0,0.1)}
+.email-window .controls .email-controls .button img{max-height:50%;vertical-align:sub}
+.email-window .content{background-color:#fff;border-radius:2px;padding:5px 15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.email-window .content .email-fields div{border-bottom:1px solid #f1f1f1;padding:5px 0}
+.email-window .content .email-fields .details-label{color:#979797;padding-right:3px}
+.email-window .content .email-content{padding:20px 0;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;min-height:250px}
+.email-window .content .email-content .pdf-file{position:relative}
+.email-window .content .email-content .pdf-file .preview{position:absolute;left:50px;bottom:-60px;background-color:#f1f1f1;height:350px;padding:15px 10px;box-shadow:0 0 20px rgba(0,0,0,0.3);border-radius:3px;-webkit-transition:visibility 0s,opacity .5s linear;transition:visibility 0s,opacity .5s linear}
+.email-window .content .email-content .pdf-file .preview img{height:100%}
+.email-window .content .email-content .pdf-file .preview .arrow{background-color:#f1f1f1;position:absolute;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);left:-7px;bottom:75px;height:15px;width:15px}
+.email-window .content.answer .email-fields{border-bottom:1px solid #f1f1f1;padding-bottom:10px}
+.email-window .content.answer .email-fields div{padding:3px 0;border:0}
+.email-window .content.answer .email-fields .label{color:#979797;padding-right:3px}
+.email-window .content.answer .email-content{padding:0}
+@keyframes typedjsBlink{50%{opacity:.0}
+}@-webkit-keyframes typedjsBlink{0%{opacity:1}
+50%{opacity:.0}
+100%{opacity:1}
+}
