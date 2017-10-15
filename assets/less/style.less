@@ -54,16 +54,21 @@ body {
   	right: 0;
   	transition: visibility 0s, opacity 0.5s linear;
 	width: 80%;
+	overflow: auto;
 	margin: 0 auto;
 	border-radius: 2px;
 	background-color: #5093fc;
 	box-shadow: 0px 20px 50px rgba(0, 0, 0, .3);
 	.frame {
-		padding: 15px 20px;
+		display: flex;
+		flex-direction: column;
+		margin: 10px 20px;
 	}
 	.controls {
-		height: 30px;
+		height: 25px;
+		margin-bottom: 10px;
 		display: flex;
+		align-items: center;
 
 		.window-elements {
 			flex-grow: 1;
@@ -79,16 +84,17 @@ body {
 		}
 
 		.email-controls {
-			flex-grow: 0;
+			flex-grow: 1;
 			text-align: right;
 			.button {
-				border-radius: 4px;
-				background-color: #fff;
-				padding: 3px 17px;
-				box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 				img {
-					max-height: 50%;
+					height: 16px;
+					width: 16px;
 					vertical-align: sub;
+					border-radius: 4px;
+					background-color: #fff;
+					padding: 3px 17px;
+					box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 				}
 			}
 		}
@@ -116,28 +122,32 @@ body {
 			min-height: 250px;
 			.pdf-file {
 				position: relative;
-				.preview {
-					position: absolute;
-					left: 50px;
-					bottom: -60px;
-					background-color: #f1f1f1;
-					height: 350px;
-					padding: 15px 10px;
-					box-shadow: 0 0 20px rgba(0, 0, 0, .3);
-					border-radius: 3px;
-					transition: visibility 0s, opacity 0.5s linear;
-					img {
-						height: 100%;
-					}
-					.arrow {
-						background-color: #f1f1f1;
+				overflow: visible;
+				.preview-wrapper {
+					position: fixed;
+					.preview {
 						position: absolute;
-						transform: rotate(45deg);
-						left: -7px;
-						bottom: 75px;
-						height: 15px;
-						width: 15px;
-					}
+						left: 50px;
+						bottom: -60px;
+						background-color: #f1f1f1;
+						height: 350px;
+						padding: 15px 10px;
+						box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+						border-radius: 3px;
+						transition: visibility 0s, opacity 0.5s linear;
+						img {
+							height: 100%;
+						}
+						.arrow {
+							background-color: #f1f1f1;
+							position: absolute;
+							transform: rotate(45deg);
+							left: -7px;
+							bottom: 75px;
+							height: 15px;
+							width: 15px;
+						}
+				}
 				}
 			}
 		}
