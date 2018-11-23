@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- Scripts -->
-	<script src="node_modules/typed.js/lib/typed.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
 
 </head>
@@ -28,7 +28,7 @@
 
 
 <a id="replay" href="#">Start</a>
-
+<div class="main-wrapper">
 <div id="main-window" class="email-window">
 	<div class="frame">
 		<div class="controls">
@@ -98,14 +98,12 @@
 			    	AI powered invoice bot<br>
 			    	www.invybot.com
 			    	<br><br>
-			    	<div class="pdf-file">
+			    	<div id="show-pdf-preview" class="pdf-file">
 			    		<img width="35" src="assets/img/pdf-icon.png">
-			    		<div class="preview-wrapper">
-				    		<div id="preview" class="preview fade-out">
-								<img src="assets/img/preview.jpg">
-				    			<div class="arrow">
-				    			</div>
-				    		</div>
+			    		<div id="preview" class="preview fade-out">
+							<img src="assets/img/preview.jpg">
+			    			<div class="arrow">
+			    			</div>
 			    		</div>
 			    	</div>
 			    </p>
@@ -113,8 +111,7 @@
 		</div>
 	</div>
 </div>
-
-
+</div>
 
 </body>
 
